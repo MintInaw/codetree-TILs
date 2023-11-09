@@ -7,7 +7,7 @@ int main() {
     {
         scanf("%s",a[i]);
     }
-    scanf(" %c",&c);
+    scanf("%*c%c",&c);
     for(i=0;i<10;i++)
     {
         len=strlen(a[i]);
