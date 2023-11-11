@@ -2,7 +2,7 @@
 #include <string.h>
 int main() {
     char a[21],c,*p;
-    int i,st=0;
+    int i,st=-1;
     scanf("%s",a);
     scanf(" %c",&c);
     for(i=0;i<strlen(a);i++)
@@ -13,7 +13,7 @@ int main() {
             break;
         }
     }
-    if(st>=0)
+    if(st>=-1)
     {
     	printf("%d",st);
 	}
