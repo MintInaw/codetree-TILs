@@ -9,12 +9,9 @@ int main() {
     {
         if(a[i]==c)
         {
+            st=i;
             break;
         }
-        else
-        {
-        	st++;
-		}
     }
     if(st>=1)
     {
