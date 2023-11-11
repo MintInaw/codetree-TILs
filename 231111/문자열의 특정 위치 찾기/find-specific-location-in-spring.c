@@ -13,13 +13,13 @@ int main() {
             break;
         }
     }
-    if(st>=-1)
+    if(st==-1)
     {
-    	printf("%d",st);
+    	printf("No");
 	}
 	else
 	{
-		printf("No");
+		printf("%d",st);
 	}
     return 0;
 }
