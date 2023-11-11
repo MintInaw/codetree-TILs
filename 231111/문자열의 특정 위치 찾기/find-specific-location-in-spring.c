@@ -13,7 +13,7 @@ int main() {
             break;
         }
     }
-    if(st>=1)
+    if(st>=0)
     {
     	printf("%d",st);
 	}
