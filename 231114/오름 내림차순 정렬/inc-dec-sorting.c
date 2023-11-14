@@ -24,19 +24,7 @@ int main() {
         printf("%d ",a[i]);
     }
     printf("\n");
-    for(i=0;i<c;i++)
-    {
-        for(j=i;j<c;j++)
-        {
-            if(a[i]<a[j])
-            {
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
-            }
-        }
-    }
-    for(i=0;i<c;i++)
+    for(i=4;i>-1;i--)
     {
         printf("%d ",a[i]);
     }
