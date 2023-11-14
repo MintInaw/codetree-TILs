@@ -9,7 +9,7 @@ int main() {
     }
     for(i=0;i<c;i++)
     {
-        for(j=i;j<c;j++)
+        for(j=i+1;j<c;j++)
         {
             if(a[i]>a[j])
             {
