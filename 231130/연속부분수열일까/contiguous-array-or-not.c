@@ -8,25 +8,27 @@ void input(int *p,int k)
 }
 int fun(int *x, int *y, int n, int m)
 {
-    int i, j, start;
-    for (i = 0; i < n; i++)
+    int i,j,start,cnt=1;
+    for(i=0;i<n;i++)
     {
-        if (x[i] == y[0])
-        {
-            start = i;
+        if(x[i]==y[0])
+          {
+            start=i;
             break;
-        }
+          }
     }
-    
-    for (i = start + 1, j = 1; i < n && j < m; i++, j++)
+    for(i=start+1;i<n;i++)
     {
-        if (x[i] != y[j])
-            return 0;
-    }
-
-    return 1;
+        if(x[i]!=y[j+cnt])
+        {
+          return 0;
+        }
+        else
+        {
+            return 1;
+        }
 }
-
+}
 int main() {
     int n,m;
     int i,j;
