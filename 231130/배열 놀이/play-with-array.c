@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-    int j,n,q,i,q1;
+    int a,j,n,q,i,q1,b;
     int  c,cnt=0,*p;
     scanf("%d %d",&n,&q);
     p=(int *)malloc(sizeof(int)*n);
@@ -14,13 +14,11 @@ int main() {
         scanf("%d",&q1);
         if(q1==1)
         {
-            int a;
             scanf("%d",&a);
             printf("%d\n",p[a-1]);
         }
         else if(q1==2)
         {
-            int a;
             scanf("%d",&a);
             int idx=-1;
             for(j=0;j<n;j++)
@@ -35,7 +33,6 @@ int main() {
         }
         else
         {
-            int a,b;
             scanf("%d %d",&a,&b);
             for(j=a;j<=b;j++)
             {
