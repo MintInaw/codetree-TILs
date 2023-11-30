@@ -12,24 +12,20 @@ int fun(int *x, int *y, int n, int m) {
     for (i = 0; i < n; i++) {
         if (x[i] == y[0]) {
             start = i;
-            break;
+            cnt = 1;
+            for (j = 1; j < m; j++) {
+                if (i + j < n && x[i + j] == y[j]) {
+                    cnt++;
+                } else {
+                    break;
+                }
+            }
+            if (cnt == m) {
+                return 1;
+            }
         }
     }
-
-    for (i = start, j = 0; i < n && j < m; i++, j++) {
-        if (x[i] == y[j]) {
-            cnt++;
-        }
-        else {
-            cnt = 0;  
-        }
-    }
-    
-    if (cnt == m) {
-        return 1;
-    } else {
-        return 0;
-    }
+    return 0;
 }
 
 int main() {
