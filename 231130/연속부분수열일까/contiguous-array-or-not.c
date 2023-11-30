@@ -1,28 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include<stdlib.h>
+void input(int *p,int k)
+{
+    int i;
+    for(i=0;i<k;i++)
+     scanf("%d",&p[i]);
+}
+int fun(int *x, int *y, int n, int m)
+{
+    int i,j,start;
+    for(i=0;i<n;i++)
+    {
+        if(x[i]==y[0])
+          {
+            start=i;
+            break;
+          }
+    }
+    for(i=start+1;i<n;i++,j++)
+      if(x[i]!=y[start++]) return 0;
+    return 1;
+
+}
 int main() {
-    int a1,b1,i,j,cnt=0;
-    int *p1,*p2;
-    scanf("%d %d",&a1,&b1);
-    p1=(int *)malloc(sizeof(int)*a1);
-    p2=(int *)malloc(sizeof(int)*b1);
-    for(i=0;i<a1;i++)
-    {
-        for(j=0;j<b1;j++)
-        {
-            if(p2[j]==p1[i])
-            {
-                cnt++;
-            }
-        }
-    }
-    if(cnt==b1)
-    {
-        printf("Yes");
-    }
+    int n,m;
+    int i,j;
+    int *p1, *p2;
+    int sw;
+    scanf("%d %d",&n,&m);
+    p1=(int *)malloc(sizeof(int)*n);
+    p2=(int *)malloc(sizeof(int)*m);
+    input(p1,n);
+    input(p2,m);
+    sw=fun(p1,p2,n,m);
+    if(sw==1)
+      printf("Yes\n");
     else
-    {
-        printf("No");
-    }
+      printf("No\n");
+    free(p1);
+    free(p2);
+
     return 0;
 }
