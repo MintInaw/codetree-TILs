@@ -8,7 +8,7 @@ void input(int *p,int k)
 }
 int fun(int *x, int *y, int n, int m)
 {
-    int i,j,start,cnt=1;
+    int i,j,start,cnt=0;
     for(i=0;i<n;i++)
     {
         if(x[i]==y[0])
@@ -19,7 +19,7 @@ int fun(int *x, int *y, int n, int m)
     }
     for(i=start+1;i<n;i++)
     {
-        if(x[i]!=y[j+cnt])
+        if(x[i]!=y[j+cnt++])
         {
           return 0;
         }
