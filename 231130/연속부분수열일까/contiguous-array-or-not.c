@@ -15,8 +15,8 @@ int fun(int *x, int *y, int n, int m) {
             break;
         }
     }
-    
-    for (i = start + 1, j = 1; i < n && j < m; i++, j++) {
+
+    for (i = start, j = 0; i < n && j < m; i++, j++) {
         if (x[i] != y[j]) {
             return 0;
         }
