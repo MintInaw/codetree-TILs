@@ -22,22 +22,16 @@ int main() {
         {
             int a;
             scanf("%d",&a);
+            int idx=-1;
             for(j=0;j<n;j++)
             {
                 if(p[j]==a)
                 {
-                    cnt=j;
+                    idx=j;
                     break;
                 }
             }
-             if(cnt>0)
-                {
-                    printf("%d\n",cnt+1);
-                }
-                else
-                {
-                    printf("0\n");
-                }
+         printf("%d\n",idx+1);
         }
         else
         {
