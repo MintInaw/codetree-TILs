@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main() {
     int j,n,q,i;
-    int a,b,q1*p;
+    int a,b,q1,*p;
     scanf("%d %d",&n,&q);
     p=(int *)malloc(sizeof(int)*n);
     for(i=0;i<n;i++)
