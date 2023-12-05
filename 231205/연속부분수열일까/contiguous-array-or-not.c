@@ -9,10 +9,9 @@ void input(int *p, int k)
 }
 
 int fun(int *x, int *y, int n, int m) {
-    int i, j, start, cnt = 0;
+    int i, j, cnt = 0;
     for (i = 0; i < n; i++) {
         if (x[i] == y[0]) {
-            start = i;
             cnt = 1;
             for (j = 1; j < m; j++) {
                 if (i + j < n && x[i + j] == y[j]) {
