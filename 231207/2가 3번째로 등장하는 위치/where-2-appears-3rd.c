@@ -16,7 +16,7 @@ int main() {
         }
         if(cnt==3)
         {
-            a=p[i]+1;
+            a=i+1;
             break;
         }
     }
