@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-    char a[10][21];
+    char a[10][100];
     int i;
     for(i=0;i<10;i++)
     {
