@@ -2,7 +2,8 @@
 #include <string.h>
 #include <math.h>
 int main() {
-    char a[20][21],b;
+    char a[20][21];
+    char b;
     int n,i,j,cnt=0;
     double sum=0;
     scanf("%d",&n);
