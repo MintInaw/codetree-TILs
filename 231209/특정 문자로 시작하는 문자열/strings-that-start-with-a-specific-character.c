@@ -8,9 +8,9 @@ int main() {
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",a[i]);
+        scanf("%s ",a[i]);
     }
-    scanf("%c",b);
+    scanf("%c",&b);
     for(i=0;i<n;i++)
     {
         for(j=0;j<21;j++)
@@ -23,6 +23,6 @@ int main() {
             }
         }
     }
-    printf("%d %.2lf",cnt-1,round(sum/cnt));
+    printf("%d %.2lf",cnt,round(sum/cnt));
     return 0;
 }
